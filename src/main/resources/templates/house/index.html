@@ -2,24 +2,10 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Story House</title>
-    <!-- 폰트어썸 -->
-    <script src="https://kit.fontawesome.com/3337789680.js" crossorigin="anonymous"></script>
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link th:href="@{/index/css/styles.css}" rel="stylesheet" />
+    <title>검색하기 | House를 둘러보아요</title>
+
 </head>
 <body>
-<!-- 네비게이션 바 -------------------------------------------------------------------------------->
-<th:block th:replace="~{/layout/navigationBar}"></th:block><!-- 네비게이션 바 끝 -->
-<!-- 로고 및 검색창-------------------------------------------------------------------------------->
-<div class="container">
-    <div class="text-center mt-5">
-        <h1>STORY HOUSE</h1>
-    </div>
-    <div class="search-bar input-group mb-3">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
-        <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
-    </div>
-</div><!-- 로고 및 검색창 끝 -->
+  <th:block th:replace="~{/layout/navbar}"></th:block>
 </body>
 </html>
