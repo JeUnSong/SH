@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>검색하기 | House를 둘러보아요</title>
-
+    <script src="https://kit.fontawesome.com/3337789680.js" crossorigin="anonymous"></script>
+    <link th:href="@{/css/index.css}" rel="stylesheet" />
 </head>
 <body>
-  <th:block th:replace="~{/layout/navbar}"></th:block>
+    <!-- 네비게이션 ---------------------------------------------------------->
+    <th:block th:replace="~{/layout/navbar}"></th:block><!-- 네비게이션 끝 -->
+
+    <!-- 로고 --------------------------------------------------------------->
+    <div class="logo-container">
+        <div class="logo">
+            <span class="gradtext">Story House</span>
+        </div>
+    </div><!-- 로고 끝 -->
+    <div class="search-container"><!-- 검색창 --------------------------------------------------------->
+            <div>
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input class="search-bar" type="search">
+                <div class="search-bar-shadow"></div>
+            </div>
+    </div>
 </body>
 </html>
