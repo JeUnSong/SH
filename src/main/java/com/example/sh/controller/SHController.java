@@ -11,7 +11,5 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class SHController {
 
     @GetMapping("/index")
-    public void index(){
-        log.info("hi log");
-    }
+    public void index(){}
 }
