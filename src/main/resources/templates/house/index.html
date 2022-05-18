@@ -7,21 +7,48 @@
     <link th:href="@{/css/index.css}" rel="stylesheet" />
 </head>
 <body>
-    <!-- 네비게이션 ---------------------------------------------------------->
+    <!-- 네비게이션 ----------------------------------------------------------------------------------->
     <th:block th:replace="~{/layout/navbar}"></th:block><!-- 네비게이션 끝 -->
 
-    <!-- 로고 --------------------------------------------------------------->
+    <!-- 로고 ---------------------------------------------------------------------------------------->
     <div class="logo-container">
         <div class="logo">
             <span class="gradtext">Story House</span>
         </div>
     </div><!-- 로고 끝 -->
     <div class="search-container"><!-- 검색창 --------------------------------------------------------->
-            <div>
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input class="search-bar" type="search">
-                <div class="search-bar-shadow"></div>
-            </div>
+        <div>
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input class="search-bar" type="search">
+            <div class="search-bar-shadow"></div>
+        </div>
+    </div><!-- 검색창 끝 -->
+    <div class="favorites-container"><!-- 즐겨찾기 ----------------------------------------------------->
+        <div class="favorites-sub-container">
+            <div class="favorites-item">1</div>
+            <div class="favorites-item">2</div>
+            <div class="favorites-item">3</div>
+            <div class="favorites-item">4</div>
+            <div class="favorites-item">5</div>
+            <div class="favorites-item">6</div>
+            <div class="favorites-item">7</div>
+            <div class="favorites-item">8</div>
+            <div class="favorites-item">9</div>
+            <div class="favorites-item">10</div>
+            <div class="favorites-item">11</div>
+            <div class="favorites-item">12</div>
+            <div class="favorites-item">13</div>
+            <div class="favorites-item">14</div>
+            <div class="favorites-item">15</div>
+        </div>
+    </div><!-- 즐겨찾기 끝 -->
+    <div class="info-container"><!-- 화살표 -------------------------------------------------------------->
+        <div>
+            <i class="fa-solid fa-angle-down info-arrow"></i>
+        </div><!-- 화살표 끝 -->
+    </div>
+    <div class="test">
+        더미
     </div>
 </body>
 </html>
