@@ -11,8 +11,11 @@
 .logo{
     font-size: 75px;
     margin-top: 80px;
-
     font-family: 'Fugaz One', cursive;
+}
+.search-fixed {
+    position: fixed;
+    top: 0px;
 }
 .search-container{
     width: 100%;
@@ -46,6 +49,7 @@
     height: 40px;
     border-radius: 30px;
     border-style: none;
+    background-color: white;
     box-shadow: 1px 1px 5px 3px rgba(169, 168, 168, 0.34);
 }
 .search-bar-shadow:hover{
