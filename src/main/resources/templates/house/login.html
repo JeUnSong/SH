@@ -3,23 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>SH : 로그인</title>
+    <link th:href="@{/css/login.css}" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- 헤더 -------------------------------------------------------------------------------->
-    <header>
+    <header class="logo-container">
         <div class="logo">
             Story House
         </div>
     </header><!-- 헤더 끝 -->
 
     <!-- 로그인 ------------------------------------------------------------------------------->
-    <div>
-
+    <div class="form">
+        <form class="form-container">
+            <input class="form-item" type="text" placeholder="아이디">
+            <input class="form-item" type="password" placeholder="비밀번호">
+            <p class="form-item">로그인 상태 유지</p>
+            <button class="form-item btn">로그인</button>
+        </form>
     </div><!-- 로그인 끝 -->
 
-    <!-- 푸터 --------------------------------------------------------------------------------->
-    <div>
+    <div class="sign-container"><!-- 회원가입 ------------------------------------------------------------------------>
+        <div class="sing-item">
+            <span>비밀번호 찾기&nbsp</span>
+            <span>|&nbsp</span>
+            <span>아이디 찾기&nbsp</span>
+            <span>|&nbsp</span>
+            <span>&nbsp회원가입</span>
+        </div>
+    </div><!-- 회원가입 -->
 
+    <div class="sns-container"><!-- sns 로그인------------------------------------------------>
+        <button class="sns-item btn">네이버 로그인</button>
+        <button class="sns-item btn">구 글 로그인</button>
+        <button class="sns-item btn">카카오 로그인</button>
+    </div><!-- sns 로그인 -->
+
+    <!-- 푸터 --------------------------------------------------------------------------------->
+    <div class="footer-container">
+        푸터
     </div><!-- 푸터 끝 -->
 </body>
 </html>
