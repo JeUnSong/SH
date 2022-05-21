@@ -12,4 +12,9 @@ public class SHController {
 
     @GetMapping("/index")
     public void index(){}
+
+    @GetMapping("/login")
+    public void login(){}
 }
+
+
