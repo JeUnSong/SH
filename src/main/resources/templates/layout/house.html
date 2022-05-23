@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="setContent(content)">
+<head>
+    <meta charset="UTF-8">
+    <title>house</title>
+    <!-- 메인 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <link th:href="@{/css/house.css}" rel="stylesheet" />
+    <!-- 폰트어썸 -->
+    <script th:src="@{https://kit.fontawesome.com/3337789680.js}" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script th:src="@{https://code.jquery.com/jquery-latest.js}"></script>
+</head>
+<body>
+    <div class="house-container">
+        <div class="house-item header">
+                <div class="header-item logo">
+                    Story House
+                </div>
+                <div class="header-item title">
+                    송제운님의 하우스(타이틀 변경 가능)
+                </div>
+                <div class="header-item count">
+                    <span class="interval">TODAY : 0</span>
+                    <span>TOTAL : 0</span>
+                </div>
+                <div class="header-item tap">
+                    <a class="interval">하우스</a>
+                    <a class="interval">게시판</a>
+                    <a class="interval">방명록</a>
+                </div>
+        </div>
+        <div class="house-item avatar">
+            <div class="avatar-item avatar-box">
+                <div id="avatar-api">
+                    아바타 준비중
+                </div>
+            </div>
+            <div class="avatar-item follow">
+                <div class="follow-btn">
+                    친구 추가
+                </div>
+            </div>
+        </div>
+        <div class="house-item content">
+            <th:block th:replace="${content}"></th:block>
+        </div>
+    </div>
+</body>
+</th:block>
+</html>
