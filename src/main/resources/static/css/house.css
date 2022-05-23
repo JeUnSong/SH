@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+.house-container{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 150px 820px;
+}
+.house-item{
+
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: blueviolet;
+}
+.avatar{
+    background-color: aquamarine;
+}
+.content{
+    background-color: darkblue;
+}
