@@ -15,6 +15,9 @@ public class SHController {
 
     @GetMapping("/login")
     public void login(){}
+
+    @GetMapping("/house")
+    public void house(){}
 }
 
 
