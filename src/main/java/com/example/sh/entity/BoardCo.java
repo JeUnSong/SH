@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Board_co {
+public class BoardCo extends BaseEntity {
 
     @Id
     private int id;
@@ -30,10 +30,6 @@ public class Board_co {
 
     @Column(length = 150, nullable = false)
     private String board_comment;
-
-    @Column(nullable = false)
-    private java.sql.Timestamp board_comment_date;
-    private java.sql.Timestamp board_comment_modify_date;
 
     private int board_comment_like_number;
 }

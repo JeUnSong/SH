@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class House {
+public class House extends BaseEntity{
 
     @Id
     private int id;
@@ -30,15 +30,6 @@ public class House {
 
     @Column(length = 5000,nullable = false)
     private String house_content;
-
-    @Column(nullable = false)
-    private java.sql.Timestamp house_content_date;
-
-    @Column(length = 5000,nullable = false)
-    private String content_history;
-
-    @Column(nullable = false)
-    private java.sql.Timestamp content_history_date;
 
     private int today;
     private int total;

@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Board_img {
+public class BoardImg {
 
     @Id
     private int id;

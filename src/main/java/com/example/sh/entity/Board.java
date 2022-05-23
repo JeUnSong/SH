@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Board {
+public class Board extends BaseEntity {
 
     @Id
     private int id;
@@ -33,10 +33,6 @@ public class Board {
 
     @Column(length = 100)
     private String board_tag;
-
-    @Column(nullable = false)
-    private java.sql.Timestamp board_date;
-    private java.sql.Timestamp board_modify_date;
 
     private int board_visitcount;
     private int board_like_number;

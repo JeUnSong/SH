@@ -2,10 +2,7 @@ package com.example.sh.entity;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name= "users")
@@ -14,7 +11,7 @@ import javax.persistence.Table;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Users {
+public class Users extends BaseEntity {
 
     @Id
     private int id; // BASE64 형식의 문자열
@@ -32,10 +29,6 @@ public class Users {
     @Column(length = 20, nullable = false)
     private String nickname;
 
-    @Column(nullable = false)
-    private java.sql.Timestamp create_date;
-    private java.sql.Timestamp modify_date;
-
     @Column(length = 45, nullable = false)
     private String sns_id;
 
@@ -44,4 +37,6 @@ public class Users {
 
     @Column(nullable = false)
     private java.sql.Timestamp sns_connect_date;
+
+
 }

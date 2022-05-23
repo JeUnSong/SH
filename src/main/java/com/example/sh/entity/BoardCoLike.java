@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Board_co_like {
+public class BoardCoLike {
 
     @Id
     private int id;

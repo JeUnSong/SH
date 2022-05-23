@@ -8,13 +8,13 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name= "guest_book")
+@Table(name= "guest_book_co")
 @ToString
 @Getter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Guest_book {
+public class GuestBookCo extends BaseEntity {
 
     @Id
     private int id;
@@ -25,13 +25,9 @@ public class Guest_book {
     @Column(nullable = false)
     private int guest_book_number;
 
-    @Column(nullable = false)
-    private java.sql.Timestamp guest_book_date;
-    private java.sql.Timestamp guest_book_modify_date;
+    @Column(length = 150, nullable = false)
+    private String guest_book_comment;
 
-    @Column(length = 200, nullable = false)
-    private String guest_book_content;
+    private Boolean guest_book_comment_like;
 
-    @Column(columnDefinition="char(1)")
-    private String guest_book_like;
 }

@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Board_like {
+public class BoardLike {
 
     @Id
     private int id;

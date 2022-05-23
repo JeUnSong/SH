@@ -2,10 +2,7 @@ package com.example.sh.entity;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name= "users_log")
@@ -14,10 +11,10 @@ import javax.persistence.Table;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Users_log {
+public class UsersLog {
 
     @Id
-    private int id;
+    private int login_id;
 
     private java.sql.Timestamp login_date;
 
@@ -26,4 +23,5 @@ public class Users_log {
 
     @Column(length = 10)
     private String Login_type;
+
 }
