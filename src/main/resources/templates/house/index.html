@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>검색하기 | House를 둘러보아요</title>
     <link th:href="@{/css/index.css}" rel="stylesheet" />
+    <!-- 메인폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
     <!-- 폰트어썸 -->
     <script th:src="@{https://kit.fontawesome.com/3337789680.js}" crossorigin="anonymous"></script>
     <!-- jQuery -->
@@ -12,8 +16,17 @@
 
 </head>
 <body>
-    <!-- 네비게이션 ----------------------------------------------------------------------------------->
-    <th:block th:replace="~{/layout/navbar}"></th:block><!-- 네비게이션 끝 -->
+    <!-- 네비게이션 바 ------------------------------------>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-1 nav-common">
+                Story House
+            </div>
+            <div class="nav-2 nav-common">
+                <button>로그인</button>
+            </div>
+        </div>
+    </nav><!-- 네비게이션바 끝 -->
 
     <!-- 로고 ---------------------------------------------------------------------------------------->
     <div class="logo-container">
