@@ -7,19 +7,78 @@
 .house-container{
     display: grid;
     grid-template-columns: 20% 80%;
-    grid-template-rows: 150px 820px;
-}
-.house-item{
-
+    grid-template-rows: 150px 800px;
 }
 .header{
     grid-column-start: 1;
     grid-column-end: 3;
-    background-color: blueviolet;
+    display: grid;
+
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 80px 70px;
 }
+.logo{
+    font-size: 40px;
+    font-family: 'Fugaz One', cursive;
+    text-align: center;
+    margin: auto;
+    transform: rotate(0.04deg);
+}
+.title{
+    font-size: 40px;
+    padding-left: 30px;
+    padding-top: 10px;
+    border-bottom: solid 3px black;
+}
+.count{
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+}
+.interval{
+    margin-right: 80px;
+}
+.tap{
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
 .avatar{
-    background-color: aquamarine;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 630px 170px;
 }
-.content{
-    background-color: darkblue;
+.avatar-box{
+    display: flex;
 }
+#avatar-api{
+    margin: auto;
+    width: 90%;
+    height: 580px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    background-color: #000000;
+}
+.follow{
+    display: flex;
+}
+.follow-btn{
+    width: 80%;
+    height: 25px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #000000;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 20px 15px;
+    text-align: center;
+    font-size: 20px;
+    transition: 0.1s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+.follow-btn:hover {opacity: 0.5}
