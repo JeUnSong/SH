@@ -1,5 +1,7 @@
 @charset "UTF-8";
+/* house, home, board, guestbook의 css 파일*/
 
+/*house*/
 *{
     padding: 0;
     margin: 0;
@@ -47,7 +49,7 @@
 .avatar{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 630px 170px;
+    grid-template-rows: 630px 190px;
 }
 .avatar-box{
     display: flex;
@@ -63,6 +65,7 @@
 }
 .follow{
     display: flex;
+    background-color: brown;
 }
 .follow-btn{
     width: 80%;
@@ -82,3 +85,20 @@
     cursor: pointer;
 }
 .follow-btn:hover {opacity: 0.5}
+/*house 끝*/
+
+/*home*/
+.content-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 710px 90px;
+    padding: 10px;
+    height: 800px;
+    background-color: aqua;
+}
+.content-btn{
+    background-color: chocolate;
+}
+.content-box{
+    background-color: blueviolet;
+}
